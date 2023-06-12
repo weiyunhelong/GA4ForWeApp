@@ -1,8 +1,8 @@
 //初始化谷歌数据分析
 import GA4Tool from '../utils/GA4.js';
-var apiSecret = 'VLfdAMiSSQqfUMb0_X-Hdg';
-var measurementId = 'G-M61TCPNP2L';
-var clientId = '5393100480';
+var apiSecret = 'j2MFQ-bmTKGFz3CWEcleIA';
+var measurementId = 'G-PCTQENKEF0';
+var clientId = '5397728914';
 var GA4 = GA4Tool.createClient(apiSecret, measurementId, clientId);
 
 

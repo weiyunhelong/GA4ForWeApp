@@ -4,7 +4,8 @@ function GA4MPClient(apiSecret, measurementId, clientId) {
   this.API_SECRET = apiSecret; // GA > Admin > Data Streams > choose your stream > Measurement Protocol > Create
   this.MEASUREMENT_ID = measurementId; // GA Admin > Data Streams > choose your stream > Measurement ID
   this.CLIENT_ID = clientId; // https://developers.google.com/identity/one-tap/web/guides/get-google-api-clientid
-  this.GA_ENDPOINT = `https://www.google-analytics.com/mp/collect?measurement_id=${this.MEASUREMENT_ID}&api_secret=${this.API_SECRET}`;
+  this.GA_ENDPOINT = `https://ga-proxy.asaplus.com.cn/mp/collect?measurement_id=${this.MEASUREMENT_ID}&api_secret=${this.API_SECRET}`;
+  //this.GA_ENDPOINT = `https://www.google-analytics.com/mp/collect?measurement_id=${this.MEASUREMENT_ID}&api_secret=${this.API_SECRET}`;
   this.DEBUG_ENDPOINT = `https://www.google-analytics.com/debug/mp/collect?measurement_id=${this.MEASUREMENT_ID}&api_secret=${this.API_SECRET}`;
   // Outputs the connection details to console
   this.readClientInfo = function () {
