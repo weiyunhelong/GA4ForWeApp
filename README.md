@@ -2,13 +2,13 @@
 谷歌数据分析GA4，微信小程序中的使用
 
 # measurementId
-图2
+![](https://github.com/weiyunhelong/GA4ForWeApp/blob/main/imgs/tu1.png)
 
 # clientId
-图1
+![](https://github.com/weiyunhelong/GA4ForWeApp/blob/main/imgs/tu1.png)
 
 # apiSecret
-图三
+![](https://github.com/weiyunhelong/GA4ForWeApp/blob/main/imgs/tu2.png)
 
 
 
