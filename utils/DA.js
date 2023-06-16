@@ -1,8 +1,8 @@
 //初始化谷歌数据分析
 import GA4Tool from '../utils/GA4.js';
-var apiSecret = 'j2MFQ-bmTKGFz3CWEcleIA';
-var measurementId = 'G-PCTQENKEF0';
-var clientId = '5397728914';
+var apiSecret = 'xxx';//Measurement Protocol API 密钥
+var measurementId = 'G-xxx';//衡量 ID
+var clientId = 'xxxx';//数据流 ID
 var GA4 = GA4Tool.createClient(apiSecret, measurementId, clientId);
 
 
@@ -23,7 +23,13 @@ const viewPage = page => {
       name: 'page_view',
       params: {
         page_location: page,
-        page_referrer: prepage
+        page_referrer: prepage,
+        utm_campaign: '',//utm追踪参数
+        utm_source: '',//utm追踪参数
+        utm_content: '',//utm追踪参数
+        utm_medium: '',//utm追踪参数
+        scene_name:'',//场景值，参照 https://developers.weixin.qq.com/minigame/dev/reference/scene-list.html
+        user_id:'',//用户id，可用openid/userid
       }
     }]);
   })
@@ -40,6 +46,12 @@ const viewClick = (page, action, label) => {
         page: page,
         action: action,
         label: label,
+        utm_campaign: '',//utm追踪参数【可选】
+        utm_source: '',//utm追踪参数【可选】
+        utm_content: '',//utm追踪参数【可选】
+        utm_medium: '',//utm追踪参数【可选】
+        scene_name:'',//场景值，【可选】参照 https://developers.weixin.qq.com/minigame/dev/reference/scene-list.html
+        user_id:'',//用户id，可用openid/userid【可选】
       }
     }]);
 
